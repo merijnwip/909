@@ -1,0 +1,54 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#webcam {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-family: "Produkt-Bold", sans-serif;
+  z-index: 100;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-name {
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@font-face {
+  font-family: "Produkt-Bold";
+  src: url("Produkt-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+button {
+  z-index: 100;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
